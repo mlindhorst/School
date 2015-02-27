@@ -1,0 +1,509 @@
+Enter the number of messages to simulate: 20
+Enter  packet loss probability [enter 0.0 for no loss]:0.1
+Enter packet corruption probability [0.0 for no corruption]:0.1
+Enter average time between messages from sender's layer5 [ > 0.0]:10
+Enter TRACE:2
+
+EVENT time: 0.935697,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 6.428144,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet intact. Sending ACK.
+
+EVENT time: 8.927274,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+ACK accepted. 1
+
+EVENT time: 16.077150,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 17.478437,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet intact. Sending ACK.
+
+EVENT time: 22.915127,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+ACK accepted. 2
+
+EVENT time: 23.220312,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 26.716482,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet intact. Sending ACK.
+
+EVENT time: 29.601519,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+ACK accepted. 3
+
+EVENT time: 33.328041,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 37.904476,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet intact. Sending ACK.
+
+EVENT time: 45.933743,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+ACK accepted. 4
+
+EVENT time: 50.578934,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 56.140320,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet intact. Sending ACK.
+          TOLAYER3: packet being lost
+
+EVENT time: 57.463299,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 65.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+
+EVENT time: 66.798332,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet intact. Sending ACK.
+          TOLAYER3: packet being lost
+
+EVENT time: 68.762474,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 73.545181,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 76.127808,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 76.923523,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 80.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 81.398933,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 83.399818,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 84.951927,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 85.902313,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 87.822174,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 90.426559,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 93.135773,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 93.966400,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 94.607376,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Sending packet.
+
+EVENT time: 95.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 97.457146,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 98.468407,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 103.538475,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 106.569633,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 107.782219,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 108.090187,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 110.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 111.632774,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 113.867607,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 114.420914,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 120.116615,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 122.408981,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 125.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 127.977509,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+          TOLAYER3: packet being corrupted
+
+EVENT time: 129.402756,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 132.953278,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 133.394577,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 133.990723,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 138.187012,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+          TOLAYER3: packet being lost
+
+EVENT time: 138.322495,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Packet from B was corrupted. Wait for timeout.
+
+EVENT time: 139.730576,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 140.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 143.085434,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 143.519821,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+          TOLAYER3: packet being lost
+
+EVENT time: 148.720016,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 148.944565,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 151.885742,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 153.059479,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 154.182800,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 155.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+
+EVENT time: 156.114395,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 158.095093,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 162.307785,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 163.834183,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 165.030060,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 165.191177,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 165.620560,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 170.578934,  type: 0, timerinterrupt   entity: 0
+
+
+ - A Timer Interrupt -
+Timeout occured in A. Resending window.
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 171.057526,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+          TOLAYER3: packet being lost
+
+EVENT time: 172.084167,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 175.000839,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 178.525314,  type: 2, fromlayer3  entity: 1
+
+
+ - B Input-
+Packet from A was corrupted. Sending expected ACK.
+
+EVENT time: 180.410782,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 181.750153,  type: 2, fromlayer3  entity: 0
+
+
+- A Input -
+Unexpected ACK from B. Wait for timeout.
+
+EVENT time: 183.440659,  type: 1, fromlayer5  entity: 0
+
+
+- A Output -
+Buffered packet.
+
+EVENT time: 184.112518,  type: 2, fromlayer3  entity: 1
+ Simulator terminated at time 184.112518
+ after sending 20 msgs from layer5
+
+
+--- Session Statistics ---
+Total packets sent: 103
+Total packets received: 49
+Total corrupted packets: 23
+Total packets lost: 53
+Total packets dropped from layer 5: 0
+Total packets buffered: 9
+Total interrupts: 8
